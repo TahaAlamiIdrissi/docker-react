@@ -3,7 +3,7 @@ services:
    - docker
 
 before_install:
-  -docker build -t alamidrissitaha/docker-react -f Dockerfile.dev .
+  - docker build -t alamidrissitaha/docker-react -f Dockerfile.dev .
 
 script:
-  -docker run alamidrissitaha/docker-react npm run test -- --coverage
+  - docker run alamidrissitaha/docker-react npm run test -- --coverage
